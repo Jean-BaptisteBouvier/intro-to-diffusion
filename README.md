@@ -12,6 +12,9 @@ Here we will code a simple diffusion model in just 100 lines of python code.
 Diffusion models belong to the class of generative models as they can create new content and are very performant at image generation.
 
 
+We train a neural network to remove some level of noise from the data
+![](assets/noise_scales.png)
+
 ## How to implement a diffusion model in 100 lines of python?
 
 
