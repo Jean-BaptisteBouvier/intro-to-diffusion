@@ -25,3 +25,25 @@ In our first implementation, the only libraries needed are [torch](https://pytor
 
 We will code `single_DDPM.py` which can be found in the `codes` folder.
 
+
+
+
+
+
+
+
+## Diffusion models in 2D
+
+Now that we have coded DDPM in 1D, we can scale it up to 2D with minimal changes.
+
+
+
+## Diffusion models in 2D with multimodalities
+
+Diffusion models are supposed to be very expressive, allowing them to capture multimodalities present in the initial data.
+We will illustrate this point in the following example. The initial distribution of the data is the sum of 4 narrow Gaussians with spikes in (-1, -1), (-1, 1), (1, -1) and (1, 1).
+As before, we will add noise until this initial distribution is indistinguishable from a Gaussian centered at the origin with std 1.
+The denoising process should then separate the data into the four spikes as illustrated on the gif below.
+![Noising and denoising a multimodal distribution](assets/denoising_4.gif)
+
+
